@@ -1,3 +1,5 @@
+import commandLineArgs from 'command-line-args';
+import cliOptionsDefinition from './cliOptionsDefinition';
 import ExecHandHistory from './src/playedhandhistory/mainCalculation';
 import ExecTournamentHistory from './src/tournamentStatistics/mainCalculation';
 
@@ -17,6 +19,10 @@ const disableLoggingForBuildPhase = () => {
  */
 const exec = () => {
   disableLoggingForBuildPhase();
+
+  const cliArgs = commandLineArgs(cliOptionsDefinition);
+
+  console.log('cliArgs', cliArgs);
 
   try {
     ExecHandHistory();

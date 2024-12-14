@@ -25,13 +25,16 @@
     "debug:build": "rm -rf node_modules package-lock.json && npm i && npm run build && npm start"
   },
   "dependencies": {
+    "command-line-args": "^6.0.1",
     "dotenv": "^16.3.1",
-    "get-user-locale": "^2.3.1"
+    "get-user-locale": "^2.3.1",
+    "moment": "^2.30.1"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.7",
     "@babel/preset-typescript": "^7.23.3",
+    "@types/command-line-args": "^5.2.3",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.5",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
