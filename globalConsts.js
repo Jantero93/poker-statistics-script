@@ -22,9 +22,9 @@ exports.POKERSTARS_FILE_LINEBREAK = '\r\n';
 /**
  * @type {string} - default date format in played hand logs (yyyy/MM/dd)
  */
-exports.HANDHISTORY_DEFAULT_DATE_FORMAT = 'yyyy/MM/dd';
+exports.HANDHISTORY_DEFAULT_DATE_FORMAT = 'YYYY/MM/DD';
 
 /**
  * @type {string} - default param date format yyyy-MM-dd
  */
-exports.CLI_DEFAULT_DATE_FORMAT = 'yyyy-MM-dd';
+exports.CLI_DEFAULT_DATE_FORMAT = 'YYYY-MM-DD';

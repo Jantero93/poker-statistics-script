@@ -2,6 +2,7 @@ import commandLineArgs from 'command-line-args';
 import cliOptionsDefinition from './cliOptionsDefinition';
 import ExecHandHistory from './src/playedhandhistory/mainCalculation';
 import ExecTournamentHistory from './src/tournamentStatistics/mainCalculation';
+import ExecParam from './src/cliParameterStats/parameterHandler';
 
 const disableLoggingForBuildPhase = () => {
   /**
@@ -22,11 +23,12 @@ const exec = () => {
 
   const cliArgs = commandLineArgs(cliOptionsDefinition);
 
-  console.log('cliArgs', cliArgs);
+  console.log("cliArgs", cliArgs);
 
   try {
     ExecHandHistory();
     ExecTournamentHistory();
+    ExecParam(cliArgs);
   } catch (e) {
     console.error(
       `Error on executing scripts, error message:
